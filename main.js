@@ -36,6 +36,15 @@ const plyBtn = document.getElementById("play");
 const plyBtnImg = document.querySelector("#play img");
 let play = true;
 
+setTimeout(()=>{
+    songNum = 1;
+    music.src = 1 + ".mp3";
+    music.muted = false;
+    if(play){
+        music.play();
+    }
+
+},1500);
 
 plyBtn.addEventListener('click',() =>{
     play = !play;
